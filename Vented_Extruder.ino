@@ -6,12 +6,12 @@ Language: Wiring/Arduino
 */
 
 /********************************************************
- *
- * To connect the PID to the digital out use "time proportioning
- * control"  It's essentially a really slow version of PWM.
- * First we decide on a window size (30000mS) We then 
- * set the pid to adjust its output between 0 and that window
- * size.  Lastly, we add some logic that translates the PID
+ * The vent fan is externally switched manually separate from the Arduino
+ * PID output using the digital out with "time proportioning
+ * control". 
+ * Adjust the window size (30000mS). 
+ * Set the PID to adjust its output between 0 and that window
+ * size.  Add some logic that translates the PID
  * output into "Relay On Time" with the remainder of the 
  * window being "Relay Off Time"
  ********************************************************/
