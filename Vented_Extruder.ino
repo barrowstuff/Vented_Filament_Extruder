@@ -13,7 +13,9 @@ Language: Wiring/Arduino
  * Set the PID to adjust its output between 0 and that window
  * size.  Add some logic that translates the PID
  * output into "Relay On Time" with the remainder of the 
- * window being "Relay Off Time"
+ * window being "Relay Off Time".
+ * The serial communications presently uses the Arduino terminal window for
+ * monitoring and control with ascii character writes.
  ********************************************************/
 
 #include <PID_v1.h>
